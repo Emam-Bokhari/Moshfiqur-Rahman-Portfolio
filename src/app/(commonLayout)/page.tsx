@@ -1,4 +1,5 @@
 import Banner from "@/components/modules/Home/Banner";
+import FeaturedProject from "@/components/modules/Home/FeaturedProjects";
 import { Pattern } from "@/components/modules/Home/Pattern";
 import Skills from "@/components/modules/Home/Skills";
 
@@ -8,7 +9,7 @@ export default async function HomePage() {
       <Banner />
       <Pattern />
       <Skills />
-      {/* <FeaturedProject featuredProject={featuredProject} /> */}
+      <FeaturedProject />
     </div>
   );
 }

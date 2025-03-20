@@ -28,7 +28,7 @@ export default async function Skills() {
       {/* Tabs Section */}
       <Tabs
         defaultValue="frontend"
-        className="w-full mt-10 border-2 flex flex-col items-center"
+        className="w-full mt-10 border-2 flex flex-col items-center p-4"
       >
         <TabsList className="flex gap-4 dark:bg-[#110E18]">
           {Object.keys(groupedSkills).map((category) => (
