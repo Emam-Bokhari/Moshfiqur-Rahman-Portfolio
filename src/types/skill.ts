@@ -1,5 +1,4 @@
 export type TSkill = {
-
     _id: string;
     icon: string;
     name: string;

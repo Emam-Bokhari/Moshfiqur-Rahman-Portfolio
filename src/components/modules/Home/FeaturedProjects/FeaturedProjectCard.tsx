@@ -101,18 +101,20 @@ export default function FeaturedProjectCard({
                   Live Demo <PlayCircle size={18} />
                 </Link>
               </Button>
-              <Button
-                asChild
-                className="bg-[#8750F7] hover:bg-[#733DD6] text-white"
-              >
-                <Link
-                  href={firstProject?.frontendSourceCode}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {firstProject?.frontendSourceCode && (
+                <Button
+                  asChild
+                  className="bg-[#8750F7] hover:bg-[#733DD6] text-white"
                 >
-                  Frontend GitHub <FaGithub size={18} />
-                </Link>
-              </Button>
+                  <Link
+                    href={firstProject?.frontendSourceCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Frontend GitHub <FaGithub size={18} />
+                  </Link>
+                </Button>
+              )}
               {firstProject?.backendSourceCode && (
                 <Button
                   asChild

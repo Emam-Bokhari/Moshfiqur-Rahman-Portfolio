@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import profileImage from "@/assets/image.jpg";
+import profileImage from "@/assets/images.jpg";
 import Image from "next/image";
 
 import { ArrowRight } from "lucide-react";
@@ -36,8 +36,8 @@ export default function AboutPage() {
                 <div className="flex justify-center overflow-hidden rounded-full w-[200px] h-[200px] border-2 border-[#733DD6]">
                   <Image
                     src={profileImage}
-                    width={200}
-                    height={200}
+                    width={350}
+                    height={350}
                     alt="Profile Image"
                     className="object-cover"
                   />

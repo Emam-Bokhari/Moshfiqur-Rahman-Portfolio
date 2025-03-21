@@ -17,14 +17,15 @@ export default function CoursesAndCertifications() {
       title: "Complete Web Development Course",
       provider: "Programming Hero",
       logo: phLogo,
-      certificateLink: "https://certificate-link.com",
+      certificateLink:
+        "https://drive.google.com/file/d/1Vfffd10n3DwaQwmUZc6E0bOo7Y6Tg40I/view?usp=sharing",
     },
     {
       id: 2,
       title: "Next Level Web Development Course",
       provider: "Programming Hero",
       logo: phLogo,
-      certificateLink: "https://certificate-link.com",
+      certificateLink: "#",
     },
   ];
 

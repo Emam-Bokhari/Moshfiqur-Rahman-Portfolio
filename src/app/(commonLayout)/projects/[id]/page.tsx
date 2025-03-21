@@ -1,4 +1,5 @@
 import ProjectDetails from "@/components/modules/Projects/ProjectDetails";
+import SectionTitle from "@/components/shared/SectionTitle";
 import { getProjectById } from "@/services/Project";
 
 export default async function ProjectDetailsPage({
@@ -12,6 +13,7 @@ export default async function ProjectDetailsPage({
 
   return (
     <div className="lg:max-w-screen-2xl p-4 mx-auto ">
+      <SectionTitle title="Project Details" />
       <ProjectDetails project={project} />
     </div>
   );

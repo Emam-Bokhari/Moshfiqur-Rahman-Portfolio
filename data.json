@@ -1,0 +1,83 @@
+[
+  {
+    "icon": "",
+    "name": "Visual Studio",
+    "description": "Code Editor",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "Git",
+    "description": "Version Control System",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "GitHub",
+    "description": "Collaborative Development Platform",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "Postman",
+    "description": "API Development Platform",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "Swagger",
+    "description": "API Documentation Tool",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "SSLCommerz",
+    "description": "Payment Gateway",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "GitBook",
+    "description": "Documentation Generator",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "Vercel",
+    "description": "Deployment Platform",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  },
+  {
+    "icon": "",
+    "name": "Draw.io",
+    "description": "Flowchart and Diagram Maker",
+    "category": "Others",
+    "isDeleted": false,
+    "createdAt": "2024-03-21T12:00:00.000Z",
+    "updatedAt": "2024-03-21T12:00:00.000Z"
+  }
+]

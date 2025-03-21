@@ -50,7 +50,7 @@ export default function ProjectDetails({ project }: { project: TProject }) {
         {/* key features */}
         <div>
           <h3 className="text-[#8750F7] text-xl font-medium">Key Features:</h3>
-          <ul className="text-[#989BA4] text-base list-inside list-disc">
+          <ul className="text-[#989BA4] text-base  list-inside list-disc">
             {project?.keyFeatures.map((keyFeature, index) => (
               <li key={index}>{keyFeature}</li>
             ))}
@@ -62,7 +62,7 @@ export default function ProjectDetails({ project }: { project: TProject }) {
           <h3 className="text-[#8750F7] text-xl font-medium">
             Uses Technologies:
           </h3>
-          <ul className="text-[#989BA4] text-base list-inside list-disc">
+          <ul className="text-[#989BA4] text-base capitalize list-inside list-disc">
             {project?.technologiesUsed.map((tech, index) => (
               <li key={index}>{tech}</li>
             ))}
@@ -71,7 +71,7 @@ export default function ProjectDetails({ project }: { project: TProject }) {
         {/* project role */}
         <div>
           <h3 className="text-[#8750F7] text-xl font-medium">Project Role:</h3>
-          <p className=" text-base text-[#989BA4] leading-relaxed">
+          <p className=" text-base text-[#989BA4] leading-relaxed capitalize">
             {project?.projectRole}
           </p>
         </div>

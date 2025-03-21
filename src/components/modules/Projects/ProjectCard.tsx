@@ -96,18 +96,20 @@ export default function ProjectCard({ project }: { project: TProject }) {
                   Live Demo <PlayCircle size={18} />
                 </Link>
               </Button>
-              <Button
-                asChild
-                className="bg-[#8750F7] hover:bg-[#733DD6] text-white"
-              >
-                <Link
-                  href={project?.frontendSourceCode}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {project?.frontendSourceCode && (
+                <Button
+                  asChild
+                  className="bg-[#8750F7] hover:bg-[#733DD6] text-white"
                 >
-                  Frontend GitHub <FaGithub size={18} />
-                </Link>
-              </Button>
+                  <Link
+                    href={project?.frontendSourceCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Frontend GitHub <FaGithub size={18} />
+                  </Link>
+                </Button>
+              )}
 
               {project?.backendSourceCode && (
                 <Button
