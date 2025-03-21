@@ -26,7 +26,7 @@ export default async function FeaturedProject() {
             />
           )}
 
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-5 mt-5">
             {otherProjects?.map((project) => (
               <ProjectCard key={project._id} project={project} />
             ))}
