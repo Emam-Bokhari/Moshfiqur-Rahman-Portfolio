@@ -15,7 +15,7 @@ export default function ResumeDownloadButton() {
 
   return (
     <Button
-      className="bg-[#8750F7] hover:bg-[#733DD6] text-white flex items-center gap-2"
+      className="bg-[#8750F7] hover:bg-[#733DD6] text-white flex items-center gap-2 cursor-pointer"
       onClick={handleDownload}
     >
       <Download size={18} />

@@ -61,7 +61,7 @@ export default function BlogCard({ blog }: { blog: TBlog }) {
           </p>
           {/* read more button */}
           <Link href={`/blogs/${blog?._id}`} className="block">
-            <Button className="bg-[#8750F7] hover:bg-[#733DD6] text-white ">
+            <Button className="bg-[#8750F7] hover:bg-[#733DD6] text-white cursor-pointer">
               Read More
               <ArrowRight />
             </Button>
