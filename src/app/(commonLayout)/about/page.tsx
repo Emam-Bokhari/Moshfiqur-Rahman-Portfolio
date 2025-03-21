@@ -28,11 +28,11 @@ export default function AboutPage() {
             </div>
             {/* image */}
             <div className="flex justify-center">
-              {/* Rotating dotted border */}
+              {/* rotating dotted border */}
               <div className="relative w-[220px] h-[220px] flex items-center justify-center">
                 <div className="absolute w-full h-full border-[3px] border-dotted border-[#8750F7] rounded-full animate-spin-slow shadow-glow drop-shadow-md"></div>
 
-                {/* Profile Image with solid border */}
+                {/* profile image with solid border */}
                 <div className="flex justify-center overflow-hidden rounded-full w-[200px] h-[200px] border-2 border-[#733DD6]">
                   <Image
                     src={profileImage}
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 </li>
               </ul>
             </div>
-            {/* Work Philosophy: */}
+            {/* work philosophy: */}
             <div>
               <h3 className="text-[#8750F7] text-lg font-medium">
                 Work Philosophy:
@@ -134,7 +134,7 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            {/* Personal Interests or Hobbies: */}
+            {/* personal interests or hobbies: */}
             <div>
               <h3 className="text-[#8750F7] text-lg font-medium">
                 Personal Interests or Hobbies:
@@ -148,7 +148,7 @@ export default function AboutPage() {
                 refining UI/UX experiences.
               </p>
             </div>
-            {/* Call to action */}
+            {/* call to action */}
             <div className="space-y-4">
               <p className="text-[#989BA4] text-base leading-relaxed">
                 Feel free to check out my projects and get in touch for
@@ -161,7 +161,6 @@ export default function AboutPage() {
                 </Button>
               </Link>
             </div>
-            {/* Social Links */}
           </div>
         </div>
       </div>
