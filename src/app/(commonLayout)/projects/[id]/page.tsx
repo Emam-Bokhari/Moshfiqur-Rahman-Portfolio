@@ -1,0 +1,18 @@
+import ProjectDetails from "@/components/modules/Projects/ProjectDetails";
+import { getProjectById } from "@/services/Project";
+
+export default async function ProjectDetailsPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+
+  const { data: project } = await getProjectById(id);
+
+  return (
+    <div className="lg:max-w-screen-2xl p-4 mx-auto ">
+      <ProjectDetails project={project} />
+    </div>
+  );
+}
