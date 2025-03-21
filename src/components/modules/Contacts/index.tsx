@@ -20,8 +20,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { contactSchema } from "./contact.validation";
+import { addContact } from "@/services/Contact";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 export default function ContactForm() {
+  const router = useRouter();
   const form = useForm({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -37,7 +41,18 @@ export default function ContactForm() {
   } = form;
 
   const onSubmit: SubmitHandler<FieldValues> = async (data: FieldValues) => {
-    console.log(data);
+    try {
+      const response = await addContact(data);
+
+      if (response?.success) {
+        toast.success("Your message has been sent successfully.");
+        router.push("/");
+      } else {
+        toast.error(response.error[0]?.message);
+      }
+    } catch {
+      toast.error("Something went wring!");
+    }
   };
 
   return (
