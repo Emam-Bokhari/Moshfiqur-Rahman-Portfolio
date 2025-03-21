@@ -1,15 +1,19 @@
 import { Fragment } from "react";
-import calendar from "@/assets/schedule.png";
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { Info, PlayCircle } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
+import Link from "next/link";
+import calendar from "@/assets/schedule.png";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { TProject } from "@/types";
 
-export default function ProjectCard({ project }: { project: TProject }) {
+export default function FeaturedProjectCard({
+  firstProject,
+}: {
+  firstProject: TProject;
+}) {
   const badgeColors = [
     { base: "bg-blue-100 text-blue-800", hover: "hover:bg-blue-200" },
     { base: "bg-green-100 text-green-800", hover: "hover:bg-green-200" },
@@ -25,50 +29,51 @@ export default function ProjectCard({ project }: { project: TProject }) {
   return (
     <Fragment>
       <Card
-        key={project?._id}
-        className="w-full dark:bg-[#140C1C]  overflow-hidden flex flex-col gap-5 p-4 "
+        key={firstProject._id}
+        className="w-full dark:bg-[#140C1C] dark:hover:bg-[#1d0f28] overflow-hidden flex flex-col xl:flex-row xl:items-stretch gap-5 p-4 
+  transition-all duration-500 ease-in-out transform group 
+  hover:-translate-y-2 hover:shadow-[0px_0px_20px_rgba(135,80,247,0.6)] hover:border-[#8750F7] border-2 border-transparent"
       >
-        {/*  Image */}
-        <div className="h-[350px]">
+        {/* Left Side - Image */}
+
+        <div className="flex-1">
           <Image
-            src={project?.thumbnail}
+            src={firstProject?.thumbnail}
             alt="Featured Project"
             sizes="100vw"
             width={1200}
-            height={500}
-            className="w-full h-full object-cover rounded"
+            height={1200}
+            className="w-full h-full md:h-[350px] xl:h-[450px] object-cover rounded"
           />
         </div>
 
         {/* Right Side - Content */}
-        <CardContent className=" p-0 space-y-4">
+        <CardContent className="flex-1  p-0 space-y-4">
           {/* title and timeline*/}
           <div className="flex flex-col xl:flex-row gap-4 xl:gap-0 xl:justify-between">
             <h2 className="text-2xl text-[#8750F7] font-bold">
-              {project?.title}
+              {firstProject?.title}
             </h2>
-            {project?.projectTimeline && (
-              <div className="flex items-center space-x-3 ">
-                <p className="text-base text-[#989BA4]">
-                  {project?.projectTimeline}
-                </p>
-                <Image
-                  width={25}
-                  height={25}
-                  alt="Calendar Icon"
-                  src={calendar}
-                />
-              </div>
-            )}
+            <div className="flex items-center space-x-3 ">
+              <p className="text-base text-[#989BA4]">
+                {firstProject?.projectTimeline}
+              </p>
+              <Image
+                width={25}
+                height={25}
+                alt="Calendar Icon"
+                src={calendar}
+              />
+            </div>
           </div>
           {/* description */}
           <p className=" text-base text-[#989BA4] leading-relaxed">
-            {project?.description}
+            {firstProject?.description}
           </p>
           <div>
             {/* technologies used */}
             <div className="flex gap-4 flex-wrap">
-              {project?.technologiesUsed.map((tech, index) => {
+              {firstProject?.technologiesUsed.map((tech, index) => {
                 const color = getRandomColor();
                 return (
                   <Badge
@@ -89,7 +94,7 @@ export default function ProjectCard({ project }: { project: TProject }) {
                 className="bg-[#8750F7] hover:bg-[#733DD6] text-white"
               >
                 <Link
-                  href={project?.liveLink}
+                  href={firstProject?.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -101,21 +106,20 @@ export default function ProjectCard({ project }: { project: TProject }) {
                 className="bg-[#8750F7] hover:bg-[#733DD6] text-white"
               >
                 <Link
-                  href={project?.frontendSourceCode}
+                  href={firstProject?.frontendSourceCode}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Frontend GitHub <FaGithub size={18} />
                 </Link>
               </Button>
-
-              {project?.backendSourceCode && (
+              {firstProject?.backendSourceCode && (
                 <Button
                   asChild
                   className="bg-[#8750F7] hover:bg-[#733DD6] text-white"
                 >
                   <Link
-                    href={project?.backendSourceCode}
+                    href={firstProject?.backendSourceCode as string}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -126,7 +130,7 @@ export default function ProjectCard({ project }: { project: TProject }) {
             </div>
           </div>
           {/* details button */}
-          <Link href={`/projects/${project?._id}`} className="block">
+          <Link href={`/projects/${firstProject._id}`} className="block">
             <Button className="bg-[#8750F7] hover:bg-[#733DD6] text-white flex items-center gap-2 cursor-pointer">
               <Info size={18} />
               View Project Details
