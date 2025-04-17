@@ -1,6 +1,4 @@
 import { Fragment } from "react";
-
-import profileImage from "@/assets/images.jpg";
 import Image from "next/image";
 
 import { ArrowRight } from "lucide-react";
@@ -35,7 +33,7 @@ export default function AboutPage() {
                 {/* profile image with solid border */}
                 <div className="flex justify-center overflow-hidden rounded-full w-[200px] h-[200px] border-2 border-[#733DD6]">
                   <Image
-                    src={profileImage}
+                    src="https://res.cloudinary.com/dvpqm6zct/image/upload/v1744911136/Moshfiqur_Rahman_fmaccz.jpg"
                     width={350}
                     height={350}
                     alt="Profile Image"
