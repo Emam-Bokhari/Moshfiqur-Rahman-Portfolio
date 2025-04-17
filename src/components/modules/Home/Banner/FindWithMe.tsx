@@ -14,7 +14,7 @@ export default function FindWithMe() {
           <Link href="https://www.facebook.com/emambokhari99">
             <Image src={facebook} width={50} height={50} alt="Facebook Icon" />
           </Link>
-          <Link href="#">
+          <Link href="https://www.linkedin.com/in/moshfiqur-rahman-emam-bokhari">
             <Image src={linkedin} width={50} height={50} alt="Linkedin Icon" />
           </Link>
         </div>

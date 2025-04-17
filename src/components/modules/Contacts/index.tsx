@@ -208,7 +208,7 @@ export default function ContactForm() {
               <p className="text-[#989BA4] text-base">Gulshan-02, Dhaka</p>
               <div>
                 <div className="flex items-center gap-5">
-                  <Link href="#">
+                  <Link href="https://github.com/Emam-Bokhari">
                     <Image
                       src={github}
                       width={40}
@@ -224,7 +224,7 @@ export default function ContactForm() {
                       alt="Facebook Icon"
                     />
                   </Link>
-                  <Link href="#">
+                  <Link href="https://www.linkedin.com/in/moshfiqur-rahman-emam-bokhari">
                     <Image
                       src={linkedin}
                       width={40}

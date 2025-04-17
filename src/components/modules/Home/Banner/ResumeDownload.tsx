@@ -6,8 +6,7 @@ export default function ResumeDownloadButton() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href =
-      "https://drive.google.com/uc?export=download&id=1ggCW8rK9qwP3vwUossbbjZVFus-Joeei";
-    // link.target = "_blank";
+      "https://drive.google.com/uc?export=download&id=1ibwWMCxSfBNi0R073dUTGzVw6rpEW_z5";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
